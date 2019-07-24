@@ -8,31 +8,29 @@
 	<array>
 		<dict>
 			<key>Type</key>
-			<string>PSGroupSpecifier</string>
-			<key>Title</key>
-			<string>Software Configuration</string>
-		</dict>
-		<dict>
-			<key>Type</key>
-			<string>PSTextFieldSpecifier</string>
+			<string>PSTitleValueSpecifier</string>
 			<key>Title</key>
 			<string>Version:</string>
 			<key>Key</key>
 			<string>version_number</string>
+			<key>DefaultValue</key>
+			<string>0.010</string>
 		</dict>
 		<dict>
 			<key>Type</key>
-			<string>PSTextFieldSpecifier</string>
+			<string>PSTitleValueSpecifier</string>
 			<key>Title</key>
 			<string>Build:</string>
 			<key>Key</key>
 			<string>build_number</string>
+			<key>DefaultValue</key>
+			<string>0.010</string>
 		</dict>
 		<dict>
 			<key>Type</key>
 			<string>PSGroupSpecifier</string>
 			<key>Title</key>
-			<string>Alert Schedule</string>
+			<string>Toggle Switch</string>
 		</dict>
 		<dict>
 			<key>Type</key>
@@ -68,6 +66,14 @@
 		</dict>
 		<dict>
 			<key>Type</key>
+			<string>PSTextFieldSpecifier</string>
+			<key>Title</key>
+			<string></string>
+			<key>Key</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>Type</key>
 			<string>PSToggleSwitchSpecifier</string>
 			<key>Title</key>
 			<string>Notifications</string>
@@ -75,6 +81,80 @@
 			<string>notification_preference</string>
 			<key>DefaultValue</key>
 			<false/>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+			<key>Title</key>
+			<string>More</string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSChildPaneSpecifier</string>
+			<key>Title</key>
+			<string>Next Page</string>
+			<key>Key</key>
+			<string>child_pane</string>
+			<key>DefaultValue</key>
+			<string>Auto</string>
+			<key>File</key>
+			<string>Schedule</string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+			<key>Title</key>
+			<string>Alert Schedule</string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSMultiValueSpecifier</string>
+			<key>Title</key>
+			<string>Update</string>
+			<key>Key</key>
+			<string>schedule_preference</string>
+			<key>DefaultValue</key>
+			<integer>0</integer>
+			<key>Values</key>
+			<array>
+				<integer>0</integer>
+				<integer>1</integer>
+				<integer>2</integer>
+				<integer>3</integer>
+				<integer>4</integer>
+				<integer>5</integer>
+				<integer>6</integer>
+			</array>
+			<key>Titles</key>
+			<array>
+				<string>Auto</string>
+				<string>30 mins</string>
+				<string>1 hour</string>
+				<string>2 hours</string>
+				<string>4 hours</string>
+				<string>8 hours</string>
+				<string>12 hours</string>
+			</array>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSTitleValueSpecifier</string>
+			<key>Title</key>
+			<string>Last Update</string>
+			<key>Key</key>
+			<string>last_update</string>
+			<key>DefaultValue</key>
+			<string>Jul 24 10:00 PM</string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSTitleValueSpecifier</string>
+			<key>Title</key>
+			<string>Next Update</string>
+			<key>Key</key>
+			<string>next_update</string>
+			<key>DefaultValue</key>
+			<string>Jul 25 6:00 AM</string>
 		</dict>
 	</array>
 </dict>

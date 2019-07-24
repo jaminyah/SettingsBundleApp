@@ -5,6 +5,8 @@
 //  Created by macbook on 7/18/19.
 //  Copyright © 2019 jaminya. All rights reserved.
 //
+//  Reference:
+//  https://stackoverflow.com/questions/14077431/register-default-settings-from-the-settings-bundle-plist-file
 
 import UIKit
 
@@ -24,9 +26,17 @@ class SettingsViewController: UITableViewController {
         self.tableView.estimatedRowHeight = 54
         self.tableView.rowHeight = UITableView.automaticDimension
         
-       NotificationCenter.default.addObserver(self, selector: #selector(adjustStackHeight(_:)), name: .didSetSwitch, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(adjustStackHeight(_:)), name: .didSetSwitch, object: nil)
+        SettingsBundleHelper.registerSettingsBundle()
+        SettingsBundleHelper.displayUserDefaults()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
 
+    }
+    
+    
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {

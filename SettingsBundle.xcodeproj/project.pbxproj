@@ -16,6 +16,7 @@
 		FA6C6EF522E0D4A00025DEAD /* StackTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6C6EF422E0D4A00025DEAD /* StackTableView.swift */; };
 		FA6C6EF722E0D6690025DEAD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6C6EF622E0D6690025DEAD /* Constants.swift */; };
 		FACFA2D922E0BB8300EA730B /* StackViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACFA2D822E0BB8300EA730B /* StackViewCell.swift */; };
+		FAE981AE22E6F57D00B932D9 /* SettingsBundleHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE981AD22E6F57D00B932D9 /* SettingsBundleHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		FA6C6EF422E0D4A00025DEAD /* StackTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackTableView.swift; sourceTree = "<group>"; };
 		FA6C6EF622E0D6690025DEAD /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		FACFA2D822E0BB8300EA730B /* StackViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackViewCell.swift; sourceTree = "<group>"; };
+		FAE981AD22E6F57D00B932D9 /* SettingsBundleHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsBundleHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				FACFA2D822E0BB8300EA730B /* StackViewCell.swift */,
 				FA6C6EF422E0D4A00025DEAD /* StackTableView.swift */,
 				FA6C6EF622E0D6690025DEAD /* Constants.swift */,
+				FAE981AD22E6F57D00B932D9 /* SettingsBundleHelper.swift */,
 			);
 			path = SettingsBundle;
 			sourceTree = "<group>";
@@ -152,6 +155,7 @@
 				FA6C6EF522E0D4A00025DEAD /* StackTableView.swift in Sources */,
 				FA18508322DE1C2C009CD8A4 /* AppDelegate.swift in Sources */,
 				FACFA2D922E0BB8300EA730B /* StackViewCell.swift in Sources */,
+				FAE981AE22E6F57D00B932D9 /* SettingsBundleHelper.swift in Sources */,
 				FA2CD60122E0AF580071E86E /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
